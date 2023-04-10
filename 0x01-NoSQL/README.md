@@ -26,18 +26,18 @@ Records in a MongoDB database are called documents, and the field values may inc
 
 **Read or watch**:
 
--   [NoSQL Databases Explained](https://intranet.hbtn.io/rltoken/XDaZECz5EjsCTE7FuawqVw "NoSQL Databases Explained")
--   [What is NoSQL ?](https://intranet.hbtn.io/rltoken/96R3ey5fMYFEZvqCzfQpXA "What is NoSQL ?")
--   [Building Your First Application: An Introduction to MongoDB](https://intranet.hbtn.io/rltoken/KdQw7iu6r0ZxGq7xjg8XwA "Building Your First Application: An Introduction to MongoDB")
--   [MongoDB Tutorial 2 : Insert, Update, Remove, Query](https://intranet.hbtn.io/rltoken/DARNLVL94BA2VJq-8SOcjw "MongoDB Tutorial 2 : Insert, Update, Remove, Query")
--   [Aggregation](https://intranet.hbtn.io/rltoken/YPBgakK9dBDy7UvOajMuIg "Aggregation")
--   [Introduction to MongoDB and Python](https://intranet.hbtn.io/rltoken/oGMMglCCSi0a3_wZCJcAog "Introduction to MongoDB and Python")
--   [mongo Shell Methods](https://intranet.hbtn.io/rltoken/2dFT59bMtL9W3GmjIhedYQ "mongo Shell Methods")
--   [The mongo Shell](https://intranet.hbtn.io/rltoken/3Qxitf3XQlOaRUJzkK7PKA "The mongo Shell")
+-   [NoSQL Databases Explained](https://alx-intranet.hbtn.io/rltoken/XDaZECz5EjsCTE7FuawqVw "NoSQL Databases Explained")
+-   [What is NoSQL ?](https://alx-intranet.hbtn.io/rltoken/96R3ey5fMYFEZvqCzfQpXA "What is NoSQL ?")
+-   [Building Your First Application: An Introduction to MongoDB](https://alx-intranet.hbtn.io/rltoken/KdQw7iu6r0ZxGq7xjg8XwA "Building Your First Application: An Introduction to MongoDB")
+-   [MongoDB Tutorial 2 : Insert, Update, Remove, Query](https://alx-intranet.hbtn.io/rltoken/DARNLVL94BA2VJq-8SOcjw "MongoDB Tutorial 2 : Insert, Update, Remove, Query")
+-   [Aggregation](https://alx-intranet.hbtn.io/rltoken/YPBgakK9dBDy7UvOajMuIg "Aggregation")
+-   [Introduction to MongoDB and Python](https://alx-intranet.hbtn.io/rltoken/oGMMglCCSi0a3_wZCJcAog "Introduction to MongoDB and Python")
+-   [mongo Shell Methods](https://alx-intranet.hbtn.io/rltoken/2dFT59bMtL9W3GmjIhedYQ "mongo Shell Methods")
+-   [The mongo Shell](https://alx-intranet.hbtn.io/rltoken/3Qxitf3XQlOaRUJzkK7PKA "The mongo Shell")
 
 ## Learning Objectives
 
-At the end of this project, you are expected to be able to  [explain to anyone](https://intranet.hbtn.io/rltoken/EHQwWpxfHWsBG-AqOWROvw "explain to anyone"),  **without the help of Google**:
+At the end of this project, you are expected to be able to  [explain to anyone](https://alx-intranet.hbtn.io/rltoken/EHQwWpxfHWsBG-AqOWROvw "explain to anyone"),  **without the help of Google**:
 
 ### General
 
@@ -72,6 +72,7 @@ At the end of this project, you are expected to be able to  [explain to anyone](
 -   All your modules should have a documentation (`python3 -c 'print(__import__("my_module").__doc__)'`)
 -   All your functions should have a documentation (`python3 -c 'print(__import__("my_module").my_function.__doc__)'`
 -   Your code should not be executed when imported (by using  `if __name__ == "__main__"`:)
+
 
 ## More Info
 
