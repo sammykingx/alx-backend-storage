@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 
 
-from pymongo import MongoClient
+'''A Python module tha provides stats about nginx'''
 
-'''Python script that provides some stats about Nginx
-logs stored in MongoDB'''
+
+from pymongo import MongoClient
 
 
 def get_stats(collection, obj):
@@ -12,12 +12,8 @@ def get_stats(collection, obj):
     return collection.count_documents(obj)
 
 
-def print_stats():
+def print_stats(collection):
     '''Prints stats'''
-
-    con = MongoClient('mongodb://localhost:27017')
-    db = con.logs
-    collection = db.nginx
 
     print(f'{collection.estimated_document_count()} logs')
 
@@ -32,4 +28,8 @@ def print_stats():
           {'method': 'GET', 'path': '/status'})))
 
 
-print_stats()
+if __name__ =='__main__':
+    con = MongoClient('mongodb://localhost:27017')
+    collection = con.logs.nginx
+
+    print_stats(collection)
