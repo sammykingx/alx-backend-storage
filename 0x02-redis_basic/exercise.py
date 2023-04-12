@@ -21,5 +21,5 @@ class Cache:
         Method takes a data argument and returns a string
         """
         self._key = str(uuid4())
-        self._redis.set(key, data)
+        self._redis.set(self._key, data)
         return self._key
