@@ -12,8 +12,13 @@ def get_stats(collection, obj):
     return collection.count_documents(obj)
 
 
-def print_stats(collection):
+def print_stats():
     '''Prints stats'''
+
+    con = MongoClient('mongodb://localhost:27017')
+    db = con.logs
+    collection = db.nginx
+
     print(f'{collection.estimated_document_count()} logs')
 
     methods = ['GET', 'POST', 'PUT', 'PATCH', 'DELETE']
@@ -27,9 +32,4 @@ def print_stats(collection):
           {'method': 'GET', 'path': '/status'})))
 
 
-if __name__ == '__main__':
-    con = MongoClient('mongodb://localhost:27017')
-    db = con.logs
-    collection = db.nginx
-
-    print_stats(collection)
+print_stats()
