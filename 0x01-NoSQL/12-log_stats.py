@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 
-
 '''A Python module tha provides stats about nginx'''
-
 
 from pymongo import MongoClient
 
@@ -28,7 +26,7 @@ def print_stats(collection):
           {'method': 'GET', 'path': '/status'})))
 
 
-if __name__ =='__main__':
+if __name__ == '__main__':
     con = MongoClient('mongodb://localhost:27017')
     collection = con.logs.nginx
 
