@@ -1,10 +1,8 @@
 #!/usr/bin/env python3
 
+'''A Python module tha provides stats about nginx'''
 
 from pymongo import MongoClient
-
-'''Python script that provides some stats about Nginx
-logs stored in MongoDB'''
 
 
 def get_stats(collection, obj):
@@ -16,8 +14,7 @@ def print_stats():
     '''Prints stats'''
 
     con = MongoClient('mongodb://localhost:27017')
-    db = con.logs
-    collection = db.nginx
+    collection = con.logs.nginx
 
     print(f'{collection.estimated_document_count()} logs')
 
@@ -32,4 +29,5 @@ def print_stats():
           {'method': 'GET', 'path': '/status'})))
 
 
-print_stats()
+if __name__ == '__main__':
+    print_stats()
