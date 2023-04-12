@@ -13,11 +13,11 @@ def get_stats(collection, obj):
 
 
 if __name__ == '__main__':
-    con = Mongoclient('mongodb://localhost:27017')
+    con = MongoClient('mongodb://localhost:27017')
     db = con.logs
     collection = db.nginx
 
-    print('{collection.estimated_document_count()} logs')
+    print(f'{collection.estimated_document_count()} logs')
 
     methods = ['GET', 'POST', 'PUT', 'PATCH', 'DELETE']
     print('Methods:')
@@ -26,5 +26,5 @@ if __name__ == '__main__':
         print('\tmethods {}: {}'.format(req,
               get_stats(collection, {'method': req})))
 
-    print('{} status check'.format(collection,
-          {'method': 'GET', 'path': '/status'}))
+    print('{} status check'.format(get_stats(collection,
+          {'method': 'GET', 'path': '/status'})))
