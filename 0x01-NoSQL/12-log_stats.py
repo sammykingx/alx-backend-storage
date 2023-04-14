@@ -5,14 +5,8 @@
 from pymongo import MongoClient
 
 
-def get_stats(collection, obj):
-    '''Returns the number of documents in a collection'''
-    return collection.count_documents(obj)
-
-
-def print_stats():
-    '''Prints stats'''
-
+if __name__ == '__main__':
+    '''Prints the log stats in nginx collection'''
     con = MongoClient('mongodb://localhost:27017')
     collection = con.logs.nginx
 
@@ -23,11 +17,7 @@ def print_stats():
 
     for req in methods:
         print('\tmethods {}: {}'.format(req,
-              get_stats(collection, {'method': req})))
+              collection.count_documents({'method': req})))
 
-    print('{} status check'.format(get_stats(collection,
+    print('{} status check'.format(collection.count_documents(
           {'method': 'GET', 'path': '/status'})))
-
-
-if __name__ == '__main__':
-    print_stats()
